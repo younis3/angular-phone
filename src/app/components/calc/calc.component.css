@@ -1,0 +1,133 @@
+.page {
+  height: 100vh;
+  width: 100vw;
+  background: #6190e8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #32353b,
+    #5f80bd8c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #32353b,
+    #5f80bdb9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calcWrapper {
+  padding: 12px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background: #6190e8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #a7bfe8,
+    #6190e8
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #a7bfe8,
+    #58647a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 72vh;
+  width: 55vw;
+  max-width: 400px;
+}
+
+.calcDisplay {
+  margin: 1vh 1.5vw;
+  margin-bottom: -0.2vh;
+  border-radius: 10%;
+  background-color: #fdfdfd;
+  opacity: 0.9;
+  box-shadow: rgba(2, 15, 5, 0.15) 2px 2px 10px;
+  height: 15vh;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.calcDisplay p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  max-width: 36vw;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.delNum {
+  text-align: right;
+  position: absolute;
+  right: 6%;
+  bottom: 10%;
+  transform: scale(1.25);
+  opacity: 0.84;
+  cursor: pointer;
+}
+
+.delNum button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.calcNumbersWrapper {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.calcNum button {
+  box-shadow: rgba(50, 50, 93, 0.15) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border: none;
+  margin-top: 3vh;
+  border-radius: 40%;
+  padding: 0.2vh 0.2vw;
+  font-size: larger;
+  width: 16vw;
+  height: 8vh;
+  max-width: 110px;
+  cursor: pointer;
+}
+
+.calcLowerBtns {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.calcLowerButton button {
+  box-shadow: rgba(50, 50, 93, 0.15) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border: none;
+  margin-top: 3vh;
+  border-radius: 34%;
+  width: 24vw;
+  padding: 2.2vh 2.2vw;
+  font-size: larger;
+  max-width: 150px;
+  background-color: rgba(183, 240, 98, 0.747);
+  cursor: pointer;
+}
+
+#cancel button {
+  background-color: rgb(201, 85, 104);
+}
+
+#cancel button:hover {
+  background-color: rgb(199, 62, 85);
+}
+
+.calcNum button:hover {
+  background: rgba(255, 255, 255, 0.671);
+}
+
+.calcLowerButton button:hover {
+  background-color: greenyellow;
+}
